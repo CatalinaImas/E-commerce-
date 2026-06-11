@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Administrador de Productos</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/admin.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="nav-container">
+    <img src="../assets/images/logo.png" alt="Logo" class="logo">
+    <nav class="nav-links">
+      <a href="../index.html">Inicio</a>
+      <a href="products.html">Productos</a>
+      <a href="register.html">Registro</a>
+      <a href="contact.html">Contacto</a>
+      <a href="about.html">Acerca de nosotros</a>
+      <a href="admin-products.html">Admin</a>
+    </nav>
+  </div>
+</header>
+
+<main class="admin-container">
+  <h1>Panel de administración</h1>
+
+  <!-- TABLA DE PRODUCTOS -->
+  <section class="table-section">
+    <h2>Listado de productos</h2>
+    <div class="table-responsive">
+      <table class="product-table">
+        <thead>
+          <tr>
+            <th>Foto</th>
+            <th>Nombre</th>
+            <th>Descripción</th>
+            <th>Fecha de ingreso</th>
+            <th>Precio</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="../assets/images/products/product-1.png" width="60"></td>
+            <td>NYC Classic Choco Chunk</td>
+            <td>Cookie clásica con chips de chocolate.</td>
+            <td>01-06-2026</td>
+            <td>$7.50</td>
+            <td><button class="btn-edit">Editar</button> <button class="btn-delete">Borrar</button></td>
+          </tr>
+          <tr>
+            <td><img src="../assets/images/products/product-2.png" width="60"></td>
+            <td>Matcha White Bliss</td>
+            <td>Cookie verde con chocolate blanco.</td>
+            <td>01-06-2026</td>
+            <td>$8.00</td>
+            <td><button class="btn-edit">Editar</button> <button class="btn-delete">Borrar</button></td>
+          </tr>
+          <tr>
+            <td><img src="../assets/images/products/product-3.png" width="60"></td>
+            <td>Salted Caramel Oat Cookie</td>
+            <td>Cookie de avena con caramelo salado.</td>
+            <td>01-06-2026</td>
+            <td>$7.00</td>
+            <td><button class="btn-edit">Editar</button> <button class="btn-delete">Borrar</button></td>
+          </tr>
+          <tr>
+            <td><img src="../assets/images/products/product-4.png" width="60"></td>
+            <td>Double Dark Brooklyn Bite</td>
+            <td>Cookie intensa de cacao y chips oscuros.</td>
+            <td>01-06-2026</td>
+            <td>$8.50</td>
+            <td><button class="btn-edit">Editar</button> <button class="btn-delete">Borrar</button></td>
+          </tr>
+          <tr>
+            <td><img src="../assets/images/products/product-5.png" width="60"></td>
+            <td>Peanut Butter Soho Soft</td>
+            <td>Cookie suave de manteca de maní.</td>
+            <td>01-06-2026</td>
+            <td>$7.50</td>
+            <td><button class="btn-edit">Editar</button> <button class="btn-delete">Borrar</button></td>
+          </tr>
+          <tr>
+            <td><img src="../assets/images/products/product-6.png" width="60"></td>
+            <td>Blueberry Lemon Crumble</td>
+            <td>Cookie frutal con arándanos y limón.</td>
+            <td>01-06-2026</td>
+            <td>$8.00</td>
+            <td><button class="btn-edit">Editar</button> <button class="btn-delete">Borrar</button></td>
+          </tr>
+          <tr>
+            <td><img src="../assets/images/products/product-7.png" width="60"></td>
+            <td>Almond Espresso Crunch</td>
+            <td>Cookie con almendras y café espresso.</td>
+            <td>01-06-2026</td>
+            <td>$8.50</td>
+            <td><button class="btn-edit">Editar</button> <button class="btn-delete">Borrar</button></td>
+          </tr>
+          <tr>
+            <td><img src="../assets/images/products/product-8.png" width="60"></td>
+            <td>Vegan S’mores Midtown</td>
+            <td>Cookie especial con malvaviscos veganos.</td>
+            <td>01-06-2026</td>
+            <td>$9.00</td>
+            <td><button class="btn-edit">Editar</button> <button class="btn-delete">Borrar</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- FORMULARIO -->
+  <section class="form-section">
+  <h2>Agregar nuevo producto</h2>
+  <form class="product-form">
+    <div class="form-grid">
+      <div class="form-group">
+        <label>Nombre</label>
+        <input type="text" required>
+      </div>
+
+      <div class="form-group">
+        <label>Precio</label>
+        <input type="number" required>
+      </div>
+
+      <div class="form-group full-width">
+        <label>Descripción</label>
+        <textarea rows="3"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>Categoría</label>
+        <select required>
+          <option value="">Seleccionar...</option>
+          <option>Clásicas</option>
+          <option>Especiales</option>
+          <option>Avena</option>
+          <option>Intensos</option>
+          <option>Frutales</option>
+          <option>Café</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Imagen (URL)</label>
+        <input type="url" required>
+      </div>
+
+      <div class="form-group">
+        <label>Stock</label>
+        <input type="number" required>
+      </div>
+
+      <div class="form-group">
+        <label>Link de YouTube (opcional)</label>
+        <input type="url">
+      </div>
+    </div>
+
+    <fieldset class="features">
+      <legend>Características</legend>
+      <label><input type="checkbox"> Vegana</label>
+      <label><input type="checkbox"> Sin gluten</label>
+      <label><input type="checkbox"> Sin azúcar</label>
+    </fieldset>
+
+    <button type="submit" class="btn-primary">Guardar producto</button>
+  </form>
+</section>
+
+</main>
+
+<footer class="footer">
+    <div class="footer-col">
+      <img src="../assets/images/logo.png" class="footer-logo">
+      <p>Urban Plant Cookies ®</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Redes</h4>
+      <a href="https://www.linkedin.com/in/catalina-imas-378a73318/?skipRedirect=true" target="_blank">LinkedIn</a>
+      <a href="https://facebook.com" target="_blank">Facebook</a>
+      <a href="https://twitter.com" target="_blank">Twitter</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <p>📧 info@urbanplantcookies.com</p>
+      <p>📞 +1 305 555 1234</p>
+      <p>📍 New York, USA</p>
+    </div>
+  </footer>
+
+
+</body>
+</html>

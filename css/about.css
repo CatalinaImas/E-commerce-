@@ -1,0 +1,67 @@
+body {
+  font-family: 'IBM Plex Serif', serif;
+}
+
+.about-container {
+  margin-top: 100px;
+  padding: 40px;
+  max-width: 900px;
+  margin-inline: auto;
+  font-family: 'IBM Plex Serif', serif;
+  text-align: center;
+}
+
+.about-container h1 {
+  color: #DD2D4A;
+  margin-bottom: 30px;
+}
+
+.about-project, .about-developer, .about-phrase {
+  margin-bottom: 30px;
+}
+
+.about-project h2,
+.about-developer h2,
+.about-phrase h2 {
+  color: #880D1E;
+  margin-bottom: 10px;
+}
+
+.about-phrase blockquote {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #DD2D4A;
+  margin: 20px auto;
+}
+
+/* CARD */
+.about-card {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  max-width: 300px;
+  text-align: center;
+}
+
+.card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  color: #DD2D4A;
+  margin-bottom: 5px;
+}
+
+.card p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+}

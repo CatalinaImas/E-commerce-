@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo de Productos</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/products.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="nav-container">
+    <img src="../assets/images/logo.png" alt="Logo" class="logo">
+    <nav class="nav-links">
+      <a href="../index.html">Inicio</a>
+      <a href="products.html">Productos</a>
+      <a href="register.html">Registro</a>
+      <a href="contact.html">Contacto</a>
+      <a href="about.html">Acerca de nosotros</a>
+      <a href="admin-products.html">Admin</a>
+    </nav>
+  </div>
+</header>
+
+<main class="catalog-container">
+  
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <h3>Filtros</h3>
+    <div class="filter-group">
+      <h4>Categorías</h4>
+      <label><input type="checkbox"> Clásicas</label>
+      <label><input type="checkbox"> Especiales</label>
+      <label><input type="checkbox"> Avena</label>
+      <label><input type="checkbox"> Intensos</label>
+      <label><input type="checkbox"> Frutales</label>
+      <label><input type="checkbox"> Café</label>
+    </div>
+
+    <div class="filter-group">
+      <h4>Precio</h4>
+      <label><input type="radio" name="price"> Menos de $8</label>
+      <label><input type="radio" name="price"> $8 - $9</label>
+      <label><input type="radio" name="price"> Más de $9</label>
+    </div>
+  </aside>
+
+  <!-- GRID DE PRODUCTOS -->
+  <section class="products-grid">
+    <!-- PRODUCTO 1 -->
+    <article class="product-card">
+      <img src="../assets/images/products/product-1.png" alt="">
+      <h3>NYC Classic Choco Chunk</h3>
+      <p class="category">Clásicas</p>
+      <p class="price">$7.50</p>
+      <div class="buttons">
+        <button class="btn-primary">Comprar</button>
+        <a href="product-detail.html" class="btn-secondary">Ver más</a>
+      </div>
+    </article>
+
+    <!-- PRODUCTO 2 -->
+    <article class="product-card">
+      <img src="../assets/images/products/product-2.png" alt="">
+      <h3>Matcha White Bliss</h3>
+      <p class="category">Especiales</p>
+      <p class="price">$8.00</p>
+      <div class="buttons">
+        <button class="btn-primary">Comprar</button>
+        <a href="product-detail.html" class="btn-secondary">Ver más</a>
+      </div>
+    </article>
+
+    <!-- PRODUCTO 3 -->
+    <article class="product-card">
+      <img src="../assets/images/products/product-3.png" alt="">
+      <h3>Salted Caramel Oat Cookie</h3>
+      <p class="category">Avena</p>
+      <p class="price">$7.00</p>
+      <div class="buttons">
+        <button class="btn-primary">Comprar</button>
+        <a href="product-detail.html" class="btn-secondary">Ver más</a>
+      </div>
+    </article>
+
+    <!-- PRODUCTO 4 -->
+    <article class="product-card">
+      <img src="../assets/images/products/product-4.png" alt="">
+      <h3>Double Dark Brooklyn Bite</h3>
+      <p class="category">Intensos</p>
+      <p class="price">$8.50</p>
+      <div class="buttons">
+        <button class="btn-primary">Comprar</button>
+        <a href="product-detail.html" class="btn-secondary">Ver más</a>
+      </div>
+    </article>
+
+    <!-- PRODUCTO 5 -->
+    <article class="product-card">
+      <img src="../assets/images/products/product-5.png" alt="">
+      <h3>Peanut Butter Soho Soft</h3>
+      <p class="category">Peanut Butter</p>
+      <p class="price">$7.50</p>
+      <div class="buttons">
+        <button class="btn-primary">Comprar</button>
+        <a href="product-detail.html" class="btn-secondary">Ver más</a>
+      </div>
+    </article>
+
+    <!-- PRODUCTO 6 -->
+    <article class="product-card">
+      <img src="../assets/images/products/product-6.png" alt="">
+      <h3>Blueberry Lemon Crumble</h3>
+      <p class="category">Frutales</p>
+      <p class="price">$8.00</p>
+      <div class="buttons">
+        <button class="btn-primary">Comprar</button>
+        <a href="product-detail.html" class="btn-secondary">Ver más</a>
+      </div>
+    </article>
+
+    <!-- PRODUCTO 7 -->
+    <article class="product-card">
+      <img src="../assets/images/products/product-7.png" alt="">
+      <h3>Almond Espresso Crunch</h3>
+      <p class="category">Café</p>
+      <p class="price">$8.50</p>
+      <div class="buttons">
+        <button class="btn-primary">Comprar</button>
+        <a href="product-detail.html" class="btn-secondary">Ver más</a>
+      </div>
+    </article>
+
+    <!-- PRODUCTO 8 -->
+    <article class="product-card">
+      <img src="../assets/images/products/product-8.png" alt="">
+      <h3>Vegan S’mores Midtown</h3>
+      <p class="category">Especiales</p>
+      <p class="price">$9.00</p>
+      <div class="buttons">
+        <button class="btn-primary">Comprar</button>
+        <a href="product-detail.html" class="btn-secondary">Ver más</a>
+      </div>
+    </article>
+  </section>
+</main>
+
+
+<footer class="footer">
+    <div class="footer-col">
+      <img src="../assets/images/logo.png" class="footer-logo">
+      <p>Urban Plant Cookies ®</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Redes</h4>
+      <a href="https://www.linkedin.com/in/catalina-imas-378a73318/?skipRedirect=true" target="_blank">LinkedIn</a>
+      <a href="https://facebook.com" target="_blank">Facebook</a>
+      <a href="https://twitter.com" target="_blank">Twitter</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <p>📧 info@urbanplantcookies.com</p>
+      <p>📞 +1 305 555 1234</p>
+      <p>📍 New York, USA</p>
+    </div>
+  </footer>
+</body>
+</html>
+
